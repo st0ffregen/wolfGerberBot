@@ -27,7 +27,7 @@ def getDates(response):
 def createMessage(dates):
     message = 'Mögliche Termine:\n'
     for date in dates:
-        message += date['date'] + '\n'
+        message += 'Am ' + date['date'] + ' um ' + date['time'] + '\n'
 
     return message
 
